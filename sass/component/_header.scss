@@ -147,6 +147,10 @@
 
 }
 
+#open-menu {
+    display: none;
+}
+
 .mobile-menu.active {
     display: block;
 }
@@ -183,6 +187,10 @@
 }
 
 @media screen and (max-width: 425px) {
+    #open-menu {
+        display: block;
+    }
+
     .header {
         &__container {
             justify-content: space-between;

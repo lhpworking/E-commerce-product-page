@@ -241,6 +241,10 @@ table {
   transition: 0.5s;
 }
 
+#open-menu {
+  display: none;
+}
+
 .mobile-menu.active {
   display: block;
 }
@@ -271,6 +275,10 @@ table {
   }
 }
 @media screen and (max-width: 425px) {
+  #open-menu {
+    display: block;
+  }
+
   .header__container {
     justify-content: space-between;
     padding: 0 20px;
