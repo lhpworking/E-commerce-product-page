@@ -1,0 +1,72 @@
+@use "./variable"as *;
+
+html {
+    font-size      : 100%;
+    font-family    : $font-family !important;
+    font-weight    : 400;
+    scroll-behavior: smooth;
+    box-sizing     : border-box;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin   : 0 auto;
+}
+
+.container {
+    max-width: 1180px;
+    margin   : 0 auto;
+}
+
+.badge {
+    position        : absolute;
+    width           : 8px;
+    padding         : 2px 6px;
+    border-radius   : 10px;
+    font-size       : 10px;
+    font-weight     : 700;
+    text-align      : center;
+    color           : $color-white;
+    background-color: $color-primary;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.rounded-lg {
+    border-radius: 12px;
+}
+
+.btn {
+    padding      : 20px 25px;
+    outline      : none;
+    font-weight  : 700;
+    border       : none;
+    text-align   : center;
+    font-size    : 16px;
+    border-radius: 10px;
+    width        : 100%;
+}
+
+.btn-primary {
+    color           : $color-white;
+    background-color: $color-primary;
+    
+    &:hover {
+        opacity   : 0.8;
+        transition: all .2s linear;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin            : 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
